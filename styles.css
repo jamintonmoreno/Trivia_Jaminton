@@ -1,0 +1,39 @@
+* {
+    padding:  0;
+    margin:0 ;
+}
+
+/* Se define el area principal*/
+.container {
+    height: 650px;
+    width: 100vh;
+    display: flex;
+    border: solid 1px black;
+    align-items: center;
+    
+}
+
+/*Seccion donde se construira el formulario*/
+.formulario {
+    background-color: red;
+    height: 50%;
+    width: 50%; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Seccion donde se construir el formulario para visualizar las
+preguntas. */
+.card {
+    background-color: yellow;
+    height: 50%;
+    width: 100%; 
+    text-align: center;
+    align-items: center;
+
+}
+
+
