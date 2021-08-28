@@ -6,7 +6,7 @@
 /* Se define el area principal*/
 .container {
     height: 650px;
-    width: 100vh;
+    width: 100%;
     display: flex;
     border: solid 1px black;
     align-items: center;
@@ -16,11 +16,17 @@
 /*Seccion donde se construira el formulario*/
 .formulario {
     background-color: red;
-    height: 50%;
-    width: 50%; 
+    height: 90%;
+    width: 100%; 
+    padding: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+form * {
+    
+    padding: 5px;
 }
 
 
