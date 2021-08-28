@@ -10,26 +10,28 @@
     display: flex;
     border: solid 1px black;
     align-items: center;
-    
 }
 
 /*Seccion donde se construira el formulario*/
 .formulario {
-    background-color: red;
     height: 90%;
     width: 100%; 
     padding: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
+    align-content: center; 
 }
 
 form * {
-    
     padding: 5px;
 }
 
-
+form {
+   background-image: radial-gradient(circle at 54.36% 0.21%,
+    #c45df5 0, #a550f4 16.67%, #7c45f3 33.33%, #3c3cf2 50%,
+    #0036f0 66.67%, #0034ef 83.33%, #0034ed 100%);    
+}
 
 /* Seccion donde se construir el formulario para visualizar las
 preguntas. */
@@ -38,8 +40,7 @@ preguntas. */
     height: 50%;
     width: 100%; 
     text-align: center;
-    align-items: center;
-
+    align-items: center; 
 }
 
 
