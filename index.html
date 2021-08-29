@@ -11,11 +11,11 @@
     <div class="container">
         <div class="formulario">
             <h1> Trivia </h1>
-            <form>
+            <form action="" id="main-form">
                 <fieldset>
                     <legend><h2>Information Trivia</h2></legend>
                     <h3>Numero de preguntas:</h3>
-                    <input type="number" name="first" >
+                    <input type="number"  id="amount" >
 
                     <h3>Category:</h3>
                     <select name="" id="category">
@@ -49,22 +49,24 @@
                     <h3>Difficulty:</h3>
                     <select name="" id="difficulty">
                         <option value="0">Any Difficulty</option>
-                        <option value="9">Easy</option>
-                        <option value="10">Medium</option>
-                        <option value="11">Hard</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
                     </select>
 
                     <h3>Numero de preguntas:</h3>
                     <select name="" id="type">
-                        <option value="0">Any Type</option>
-                        <option value="9">Multiple Choise</option>
-                        <option value="10">True / False</option>
+                        <option value="any_type">Any Type</option>
+                        <option value="multiple">Multiple Choise</option>
+                        <option value="boolean">True / False</option>
                     </select>
                     <br></br>
 
                     <br><input type="submit" value="Empezar" id=""></br>
                 </fieldset>
             </form> 
+
+            <script src="main.js"></script>
            
         </div>
 
