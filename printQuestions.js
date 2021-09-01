@@ -5,27 +5,25 @@ let indexQuestion = 0;
 let type_index = 0;
 let for_index = 0;
 
-/* Imprime las preguntas de la API en el HTML */
+/* Muestra en pantalla las preguntas que envia la API */
 export const printQuestions = ((questionsData)=>{
     const containerQuestions = document.querySelector('#body-questions');
     containerQuestions.innerHTML = '';
     questionsData.forEach((question) => {
         indexQuestion++;
-        /*Guarda preguntas en local storage*/
-        const questionO =
-        {
+    
+        const questionO = {
             question : question.question,
             correct_answer : question.correct_answer,
             incorrect_answers : question.incorrect_answers
         }
         questions.push(questionO);
         localStorage.setItem('questions', JSON.stringify(questions));
-        /*****************************************/
-        
+               
         /* Ordena las respuestas aleatoriamente */
         const answersRandom = [question.correct_answer, question.incorrect_answers[0], question.incorrect_answers[1], question.incorrect_answers[2]];
         answersRandom.sort(()=>{ return Math.random() - 0.5 });
-        /*****************************************/
+       
         const html = `<div class="mt-3">
                                 <div class="card h-100 bg-dark-ligth p-2 border-noone">
                                     <div class="card-body border text-white">

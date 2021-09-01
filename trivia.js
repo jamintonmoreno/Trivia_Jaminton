@@ -1,11 +1,10 @@
 'use strict'
 
-import {printQuestions} from './printQuestions.js' //Obtengo la funcion printQuestions
+import {printQuestions} from './printQuestions.js' 
 
-const getValueInputs = localStorage.getItem('inputs'); //Obtiene los datos del localStorage
-const convertInputsJSON = JSON.parse(getValueInputs);  //Convierte los datos del localStorage A JSON
-
-let API_URL = `https://opentdb.com/api.php?amount=${convertInputsJSON[0]}` //API con nuemero de preguntas
+const getValueInputs = localStorage.getItem('inputs'); 
+const convertInputsJSON = JSON.parse(getValueInputs); 
+let API_URL = `https://opentdb.com/api.php?amount=${convertInputsJSON[0]}` 
 
 
 /* Verifica si el usuario selecciono otro campo */
@@ -25,8 +24,6 @@ fetch(API_URL)
     .then(data => printQuestions(data.results))
 
 console.log('h');
-
 const score = convertInputsJSON[0];
-
 const modal = document.querySelector('#modal-body');
 modal.innerHTML = `Yor score is: ${score} out of ${convertInputsJSON[0]}`
