@@ -16,7 +16,8 @@ const createURLApi = e => {
 };
 
 const fetchDataApi = url => {
-    fetch(url).then(response => response.json())
+    fetch(url)
+    .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.log(error));
 };
