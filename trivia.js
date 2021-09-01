@@ -7,7 +7,7 @@ const convertInputsJSON = JSON.parse(getValueInputs);
 let API_URL = `https://opentdb.com/api.php?amount=${convertInputsJSON[0]}` 
 
 
-/* Verifica si el usuario selecciono otro campo */
+/* Verifica si el usuario selecciono otro campo. */
 if (convertInputsJSON[1] !== 'any') {
     API_URL += `&category=${convertInputsJSON[1]}`
 }

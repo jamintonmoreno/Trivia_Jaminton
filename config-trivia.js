@@ -14,5 +14,5 @@ formSelect.addEventListener('submit', (e)=>{
     localStorage.setItem('inputs', JSON.stringify(userInputs)); 
 });
 
-/* Nos envia a la pagina con formulario para diligenciar */
+/* Nos envia a la pagina con el formulario para diligenciar */
 btn_submit.addEventListener('click', ()=>{ location.href='answer-questions.html'});

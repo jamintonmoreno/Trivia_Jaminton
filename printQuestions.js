@@ -5,7 +5,7 @@ let indexQuestion = 0;
 let type_index = 0;
 let for_index = 0;
 
-/* Muestra en pantalla las preguntas que envia la API */
+/* Muestra en pantalla las preguntas que envia la API. */
 export const printQuestions = ((questionsData)=>{
     const containerQuestions = document.querySelector('#body-questions');
     containerQuestions.innerHTML = '';
